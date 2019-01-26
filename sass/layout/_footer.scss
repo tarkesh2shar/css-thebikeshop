@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer{
+
+    background-color: $yellow;
+
+    &__container{
+        max-width: $container-width !important;
+        margin: 0 auto;
+        padding: 1.2rem;
+        width: 100%;
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img{
+        height: 4rem;
+        width: 11.5rem;
+
+
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+    &__left{
+
+      //  background-color: yellowgreen;
+       // flex: 1;
+ 
+    }
+    &__right{
+   //   background-color: orangered;
+   // flex:1
+   
+    
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      
+       
+
+       
+
+        &--item{
+            
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-left: 5rem;
+           
+
+        }
+
+        &--link:link,&--link:visited{
+
+            text-decoration: none;
+            color: black;
+
+
+        }
+      
+    }
+
+}

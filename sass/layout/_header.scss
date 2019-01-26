@@ -1,0 +1,168 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header{
+    height: 100vh;
+    background-image:linear-gradient(to right,rgba($black,.4),rgba($bluedark,.3)),url(../img/Slider_Photo01.jpg);
+    background-size: cover;
+    background-position: center center;
+    filter: blur(20);
+    position: relative;
+    &__container{
+        max-width: $container-width !important;
+        margin: 0 auto;
+        padding: 1.2rem;
+        width: 100%;
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__center{
+        text-align: center;
+        @include absCenter;
+
+        span{
+            color: $yellow;
+        }
+    }
+    .scroller{
+        @include absCenter;
+        top: 90%;
+        cursor: pointer;
+      
+       
+     
+      
+    }
+    .scroller2{
+        @include absCenter;
+        top: 81.55%;
+        
+        cursor: pointer;
+        transform: scale(.47) translateX(-107%);
+      
+       
+     
+      
+    }
+
+    &__img{
+        height: 4rem;
+        width: 11.5rem;
+        
+
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+    &__left{
+
+
+        //  background-color: yellowgreen;
+          flex: 1;
+   
+      }
+      &__right{
+     //   background-color: orangered;
+     // flex:1
+     
+      
+      }
+
+      &__right + img{
+        //   background-color: orangered;
+        margin-left: 2rem;
+        
+         
+         }
+
+
+        
+
+      
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+      
+       
+
+       
+
+        &--item{
+            
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: 700;
+           // margin-left: 1rem;
+
+          
+           
+           
+
+        }
+
+        &--link:link,&--link:visited{
+
+            text-decoration: none;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: .5rem;
+            position: relative;
+
+
+
+            ul{
+                list-style: none;
+                position: absolute;
+                top: 85%;
+                left: 0;
+                text-align: left;
+                width: 200%;
+                border-radius: 1rem;
+                padding: 1rem 2rem;
+                opacity: 0;
+                visibility: hidden;
+                
+
+                transition: all .2s;
+
+                li:hover{
+                    background-color: black;
+                    color: $yellow;
+                    padding: .5rem;
+                    transition: all .2s;
+                    
+                   
+
+                }
+            }
+
+
+
+
+        }
+
+        &--link:hover{
+            background-color: $yellow;
+            color: black;
+            transition: all .2s;
+
+            ul{
+                opacity: 1;
+                visibility: visible;
+            }
+
+        }
+        &--link:hover ul{
+            background-color: $yellow;
+            color: black;
+        }
+      
+    }
+  
+}

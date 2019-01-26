@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn{
+
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+
+
+    &--full{
+        width: 100%;
+        background-color: #b7b7b7;
+        transition: all .2s;
+        color: white;
+
+        &:hover{
+            background-color: $black;
+            color: $yellow;
+        }
+
+        
+    }
+
+    &--simple{
+
+        background-color: #b7b7b7;
+        transition: all .2s;
+        color: white;
+
+        &:hover{
+            background-color: $black;
+            color: $yellow;
+        }
+
+    }
+
+    &--out-white{
+        color: white;
+        border: 3px solid white;
+        background-color: transparent;
+    }
+
+    &--out-black{
+        color: black;
+        border: 3px solid black;
+        background-color: white;
+    }
+
+    &--grey{
+        background-color: #b7b7b7;
+       
+        color: white;
+    }
+
+    &--black{
+        background-color: $black;
+        color: $yellow;
+    }
+
+}

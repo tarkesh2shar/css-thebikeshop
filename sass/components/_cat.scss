@@ -1,0 +1,100 @@
+.cat{
+    &__container{
+        max-width: $container-width !important;
+        margin: 0 auto;
+     //  padding: 4rem;
+        width: 100%;
+
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+       
+
+    }
+
+    &__btn{
+        opacity: 0;
+        visibility: hidden;
+       margin-top: 4rem;
+       transition: all .2s;
+      
+
+    }
+
+    &__box:hover> &__btn{
+        opacity: 1;
+        visibility: visible;
+       margin-top: 2rem;
+
+    }
+
+
+
+
+
+   
+    &__box{
+
+        height:25rem;
+        flex: 0 0 calc(33.33% - 4rem);
+        position: relative;
+        text-align: center;
+      
+        transition: all .5s;
+
+        
+     
+        &--para{
+         margin-top: 10rem;
+         display:block;
+
+            
+            white-space: nowrap;
+           
+
+        }
+      
+      
+
+        &--1{
+
+            background-image: url(../img/CATEGORIES_PHOTO_01.jpg);
+            background-size: cover;
+          //  background-position: 20%;
+            
+
+            &:hover{
+                background-position: 100%;
+                cursor: pointer;
+                background-image:  linear-gradient(to top right ,rgba($yellow,.5) 0%,rgba($yellow,.1) 50%,transparent 50%) ,url(../img/CATEGORIES_PHOTO_01.jpg);
+            }
+
+        }
+        &--2{
+            background-image: url(../img/CATEGORIES_PHOTO_02.jpg);
+            background-size: cover;
+            background-position: center center;
+
+            &:hover{
+                cursor: pointer;
+                background-position: 100%;
+                background-image:  linear-gradient(to top right ,rgba($yellow,.5) 0%,rgba($yellow,.1) 50%,transparent 50%) ,url(../img/CATEGORIES_PHOTO_02.jpg);
+            }
+            
+        }
+        &--3{
+            background-image: url(../img/CATEGORIES_PHOTO_03.jpg);
+            background-size: cover;
+            background-position: center center;
+            &:hover{
+                cursor: pointer;
+                background-position: 100%;
+                background-image:  linear-gradient(to top right ,rgba($yellow,.5) 0%,rgba($yellow,.1) 50%,transparent 50%) ,url(../img/CATEGORIES_PHOTO_03.jpg);
+            }
+            
+            
+        }
+    }
+}

@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.contact{
+   // margin-top: 20rem;
+   
+    background-image: url(../img/CONTACT_US_BG.jpg);
+    background-size: cover;
+    padding: 5rem;
+    text-align: center;
+    background-position: center center;
+
+    &__heading{
+
+        margin-bottom: 3rem;
+
+    }
+    &__paragraph{
+        margin-bottom: 2rem;
+    }
+
+
+}
+.gallery{
+    padding: 3rem 0rem;
+
+    &__heading{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+   
+
+}
+.cat{
+    padding: 5rem;
+    background-image: url(../img/CATEGORIES_BG_IMAGE.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 75vh;
+    
+}
+
+

@@ -1,0 +1,73 @@
+
+.gallery{
+
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    &__img{
+
+        width: 90%;
+    }
+
+    &__item{
+        
+
+        flex: 0 0 calc(25% - 1rem);
+
+
+    }
+    &__sub{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p{
+            flex: 1;
+          
+            
+            span{
+                display:block;
+                font-weight: 400;
+                font-style: italic;
+    
+            }
+        }
+
+        select{
+            margin-right: 1rem;
+            padding: 1rem;
+            padding-right: 4rem;
+            border: 1px solid $grey2;
+            border-radius: 1rem;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            appearance: none;
+            -moz-appearance: none;
+            color: black;
+
+            
+
+          
+            
+            background-image: url(../img/RIGHT_BUTTON_LINK.png);
+            background-size: 2rem;
+            background-repeat: no-repeat;
+            background-position: 95%;
+
+            option{
+                background-color: white;
+                color: black;
+            }
+            
+            
+  
+          
+        }
+    }
+}

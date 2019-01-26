@@ -1,0 +1,65 @@
+.form{
+  //  text-align: center;
+  //  background-color: red;
+ // background-color: white;
+  
+  width: 30%;
+ 
+
+  margin: 0 auto;
+
+ 
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+ &>*{
+
+    &:not(:last-child){
+     margin-bottom: 2rem;
+    }
+ }
+
+
+  input{
+    font-family: 'Roboto' sans-serif;
+    font-style: italic;
+
+
+ 
+        flex: 0 0 100%;
+    
+    &:not(:last-of-type){
+
+        flex: 0 0 calc(50% - 1rem);
+
+
+    }
+
+    border: 1px solid $grey3;
+    padding: 1rem;
+    border-radius: 1rem;
+
+  }
+  
+  textarea{
+    font-family: 'Roboto' sans-serif;
+    font-style: italic;
+
+    resize: none;
+    width: 100%;
+    border: 1px solid $grey3;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    
+    
+    
+  }
+
+
+
+
+
+}
